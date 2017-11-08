@@ -28,15 +28,16 @@ angular.module('starter.controllers', [])
 
     // 可滑动5个星10分制
     $scope.starW3 = 100;
-    $scope.three = 10;
+    $scope.three = 10.0;
     $scope.selectStar3 = function ($event) {
+      var e = $event.targetTouches[0];
       var offset = $($event.target).offset();
       var w = $($event.target).width();
-      var x = $event.pageX;
+      var x = e.pageX;
       var left = offset.left;
       if (x >= left && x <= w + left) {
         $scope.starW3 = x - left;
-        $scope.three = $scope.starW3 / 10;
+        $scope.three = ($scope.starW3 / 10).toFixed(1);
       }
     }
 
@@ -44,9 +45,10 @@ angular.module('starter.controllers', [])
     $scope.starW4 = 100;
     $scope.four = 5.0;
     $scope.selectStar4 = function ($event) {
+      var e = $event.targetTouches[0];
       var offset = $($event.target).offset();
       var w = $($event.target).width();
-      var x = $event.pageX;
+      var x = e.pageX;
       var left = offset.left;
       if (x >= left && x <= w + left) {
         $scope.starW4 = x - left;
