@@ -1,0 +1,23 @@
+<ion-view view-title="Dashboard">
+  <ion-content class="padding" scroll="false">
+    <h4>5分单个星 ：{{one}}</h4>
+    <div class="stars-off" ng-click="selectStar1($event)">
+      <div class="stars-on" style="width: {{starW1}}%;"></div>
+    </div>
+
+    <h4>5分半个星 ：{{two}}</h4>
+    <div class="stars-off" ng-click="selectStar2($event)">
+      <div class="stars-on" style="width: {{starW2}}%;"></div>
+    </div>
+
+    <h4>可滑动5个星10分制 ：{{three}}</h4>
+    <div class="stars-off" ng-touchmove="selectStar3($event)">
+      <div class="stars-on" style="width: {{starW3}}%;"></div>
+    </div>
+
+    <h4>可滑动5个星5分制 ：{{four}}</h4>
+    <div class="stars-off" ng-touchmove="selectStar4($event)">
+      <div class="stars-on" style="width: {{starW4}}%;"></div>
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,15 @@
+/* Empty. Add your own CSS if you like */
+.stars-off{
+background: url(../img/star-off.png) 0 0 no-repeat;
+background-size: 100px;
+width: 100px;
+height: 20px;
+overflow: hidden;
+text-align: left;
+}
+  
+.stars-on{
+background: url(../img/star-on.png) 0 0 no-repeat;
+background-size: 100px;
+height: 100%;
+}
