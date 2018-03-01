@@ -2,4 +2,4 @@
     滑动效果需要运行到模拟器上
 
 #### 效果
-![gif](http://chuantu.biz/t6/132/1510109673x2018856255.gif "DEMO-GIF")
+![gif](http://m.qilong.com/Public/newmobile/default/Images/star.gif "DEMO-GIF")
